@@ -1,0 +1,37 @@
+    
+            body{
+                font-family: 'segoe''Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                /* menggunakan gradien*/
+                background: linear-gradient(135deg, #f4f4f9 0%, #88a3cb 100%);
+                padding: 40px;
+                color:blue;
+                min-height: 100vh;
+
+            }
+            .container{
+                max-width: 800px;
+                margin: 0 auto;
+                background-color:white
+                berder: radius 15px;
+                overflow:after;
+                box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+                padding: 20px
+            }
+           .cerita-teks{
+            text-align:justify;
+            background-color: #f4f4f9;
+            padding:20px;
+            border: left #5a5a5a;
+            border: radius 5px;
+            margin:20px 0;
+            color:#444;
+           }
+           .foto-profil img{
+                width: 80px;
+                height: 80px;
+                border-radius:50%;
+                object-fit:cover;
+                border:4px solid #5a65ad;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                transition:transform 0.3s ease;
+            }
