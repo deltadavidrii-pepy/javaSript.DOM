@@ -1,0 +1,27 @@
+// Ambil data dari URL
+const params = new URLSearchParams(window.location.search);
+const jumlahPilihan = parseInt(params.get('jml'));
+
+const container = document.getElementById('container-pilihan');
+const tombolOk = document.getElementById('btnOk');
+
+// Fungsi untuk membuat input secara dinamis
+if (jumlahPilihan > 0) {
+    for (let i = 1; i <= jumlahPilihan; i++) {
+        const row = document.createElement('div');
+        row.className = 'input-group';
+        
+        row.innerHTML = `
+            <label>Pilihan ${i} :</label>
+            <input type="text" placeholder="<Teks Pilihan ${i}>">
+        `;
+        
+        container.appendChild(row);
+    }
+}
+
+// Menambahkan event listener ke tombol
+tombolOk.addEventListener('click', function() {
+    alert("Tombol OK diklik!");
+    // Kamu bisa tambahkan logika pindah halaman lagi di sini
+});
