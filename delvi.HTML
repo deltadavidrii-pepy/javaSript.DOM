@@ -27,8 +27,24 @@
     <hr>
 
 
-    <main class="container">
-        <section id="section-1"></section>
+    <main class="container"><!-- digunakan untuk membungkus konten utama (membuat halaman baru setelah menggunakan NAVBAR DAN HEADER selesai)-->
+        <section id="section-1"><!-- digunakan untuk membuat teks menjadi beberapa bagian(pilihan 1 sampai 5)-->
+            <div class="form-group"> <!-- digunakan untuk membungkus tuisan "NAMA" dan "JUMLAH PILIHAN " dan untuk kotak input-->
+                <label> Nama :</label>
+                <input type="text" id="input-nama" placeholder="<Teks nama>"> <!--digunakan untuk menampilkan (<teks nama>) dengan kotak dan tulisan buram di dalam kotak-->
+            </div>
+            <div class="frm-group"> <!-- digunakan untuk membungkus tuisan "NAMA" dan "JUMLAH PILIHAN " dan untuk kotak input-->
+                <label>jumlah pilihan :</label> <!-- nampilin  -->
+                <input type="number" id="input-jml" placeholder="<jml>"> <!--digunakan untuk menampilkan jml dengan kotak dan tulisan buram di dalam kotak-->
+            </div>
+
+                <button id="btn-ok-1">OK </button>    
+        </section>
+        <section id="section-2" class="hidden"></section>
+        
+        <section id="section-3" class="hidden"></section>
+
+        <section id="section-final" class="hidden"></section>
     </main>
 
 </body>
