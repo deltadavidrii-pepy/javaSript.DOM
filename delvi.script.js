@@ -96,8 +96,18 @@ let container3 = document.getElementById('section-3');// buat kotak/ from piliha
         </div>
         <button id="btn-ok-3">OK</button>`;// digunakan untuk pengumpulan identitas dan penutup dari proses pemilihan. setelah aku memilih salah  sat dari radio button yg sudah aku buat, aku bakalan nambahin atribut berupa "EMAIL".
 
-        
+        // penyajian konten ke layar
+        container3.innerHTM = radionHtml;//innerHTM adalah digunakan untuk mengisi apa saja di dalam sebuah elemen HTML. container3 adalah elemen HTML. 
+        container3.classList.remove('hidden');// untuk menutup sementara class CSS.
+
+        document.getElementById('btn-ok-3').onclick = tahapFinal;
+
     
 
+}
+// TAHAP TERAKHIR :
+function tahapakhir(){
+    let resTerPilih = document.querySelector('input[name="pilih_radio"]:checked');
+    let emailInput = document.getElementById('INPUT-EMAIL').value;
 }
 
