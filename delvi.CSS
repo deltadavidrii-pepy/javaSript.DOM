@@ -1,7 +1,52 @@
-/* 1. Reset & Dasar */
+/* 1. Reset & Dasar digunakan untuk memebrsihkan pengaturan bawaan browser agar tampilan webnya terlihat sama di semua perangkat */
 body { 
-    font-family: 'Segoe UI', Arial, sans-serif; 
-    margin: 0; 
-    padding: 0; 
-    background-color: #f0f2f5; 
+    font-family: 'Segoe UI', Arial, sans-serif; /* atur jenis huruf seperti model dan jenis tulisannya*/
+    margin: 0; /*untuk menghilangkan spasi di LUAR kotak*/
+    padding: 0; /* untuk menghilangkan ruang kosong di DALAM kotak*/
+    background-color: #357fca; /* untuk menentukan warna latar belakang*/
+}
+/* mengatur tampilan untuk bagian foto dan nama aku */
+.header-mahasiswa{
+    display: flex;/* digunakan untuk mengatur tata letak elemen di dalam wadah agar lebih rapi*/
+    justify-content: space-between;/* untuk mengatur pembagian ruang dengan kiri dan kanan. secara horizontal*/
+    padding: 20px 50px;/* untuk menghilangkan ruang kosong di DALAM kotak*/
+    background: white;/* untuk menentukan warna latar belakang*/
+    align-items: center;/* untuk mengatur pembagian ruang dengan atas dan bawah. secara vertikal*/
+}
+/* untuk mengatur tampilan foto saya*/
+.info-foto img { 
+    width: 10px;/* untuk ukuran lebarnya foto saya*/ 
+    height: 100px; /* untuk mengatur ukuran tinggi fotoku */
+    border: 2px solid #0044cc; /* digunakan untuk garis pinggir(bingkai) pada fotoku */
+    border-radius: 5px; /* digunakan untuk menumpulkan/merapikan sudut tajam pada sebuah kotak(foto ku). */
+}
+/* untuk tempat / wadah utama untuk alaman kertas tempat aku menulis semua form input nama dan jumlah pilihan. */
+.container { 
+    padding: 30px 50px; /* untuk menghilangkan ruang kosong di DALAM kotak*/
+    background: white; /* untuk menentukan warna latar belakang*/
+    margin: 20px 50px;/*untuk menghilangkan spasi di LUAR kotak*/
+    border-radius: 8px;/* digunakan untuk menumpulkan/merapikan sudut tajam pada sebuah kotak(foto ku). */
+    box-shadow: 0 2px 10px rgba(20, 19, 19, 0.1);/* digunakan untuk membri bayangan dengan menggunakan warna pada atas latar belakangnya. atau digunakan untuk memberikan efek bayangan pada kotak (container).*/
+    min-height: 400px; /* digunakan untuk menentukan tinggi minimal sebuah kotak pada menu pilihan */
+}
+/* digunakan untuk mengatur seluruh baris pada bubungkusan untuk form-group dan form-input supaya  barengan */
+.form-group { 
+    margin-bottom: 15px; /* untuk memberikan jarak antara baris di bawah setiap kotak yang berisi (form-group). */
+    display: flex; /* digunakan untuk mengatur tata letak elemen di dalam wadah agar lebih rapi*/
+    align-items: center; /* untuk mengatur pembagian ruang dengan atas dan bawah. secara vertikal*/
+
+
+}/* digunakna untuk keterangan tulisan/nama baris seperti keterangan "nama" "dan "pilihan". */
+.form-group label { 
+    color: blue; /* untuk atur warna teks */
+    width: 150px; /* untuk ukuran lebarnya ukuran tulisan */ 
+    font-weight: bold; 
+}
+
+/* untuk mengatur ukuran pada kotak yang untuk mengetik. */
+.form-group input { 
+    border: 1px solid black; 
+    padding: 8px; 
+    width: 300px; 
+    border-radius: 4px;
 }
