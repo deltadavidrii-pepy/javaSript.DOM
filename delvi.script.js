@@ -75,28 +75,29 @@ if (adaYangKosong) { // jika variable adaYangKosong bernilai true maka ada kotak
 
 // untuk radio button  dan imput email 
 
-let container3 = document.forEach((intem, indx) =>{
-    let radionHtml = `<h3>Pilih salah satu:</h3>`;
+let container3 = document.getElementById('section-3');// buat kotak/ from pilihan yang kosong di HTML yang memiliki id="section-3"untuk menampilkannya.
+    let radionHtml = `<h3>Pilih salah satu:</h3>`;// digunakan untuk menampung kode HTML untuk "pilih-pilih" nanti. sehingga ak di sini membuat atau komen "pilih salah satu" supaya tidak binggung.
 
-    dataUser.listPilihan.forEach((intem, idx) => {
-
-
-        dataUser.listPilihan.forEach((item, idx) => {
+    dataUser.listPilihan.forEach((intem, idx) => {// forEach digunakan untuk setipa data yang ada di dalam daftar yang ada, "item" digunakan untuk menentukan isi pilihannnya."index" adalah digunakan untuk no urutan.
+        
+        // penjelasan ke seleuruhnnya bagian ini : digunakan untuk mengubah daftar teks yang sudah aku miliki menjadi tampilan tombol bulat yang bisa diklik oleh user di layar.
         radioHtml =  radioHtml + `
             <div class="form-group">
                 <input type="radio" name="pilih_radio" value="${item}" id="rad${idx}">
                 <label for="rad${idx}" style="color:black; margin-left:10px;">${item}</label>
             </div>`;
-    });
+    });// "radioHtml =  radioHtml +" digunakan untuk mengambil isi radioHtml yg sudah ada, kemudian menambhkan satu blok kode HTML di bawahnya lagi. kemudian "value="${item}" digunakan untuk menyimpan data aslinya nanti
+    // for="rad${idx}" digunakan untuk menghubungkan teks dengan tombol.
 
     radioHtml = radioHtml + `
         <div class="form-group" style="margin-top:20px;">
             <label>Email :</label>
             <input type="email" id="input-email" placeholder="contoh@mail.com">
         </div>
-        <button id="btn-ok-3">OK</button>`;
-    })
-})
+        <button id="btn-ok-3">OK</button>`;// digunakan untuk pengumpulan identitas dan penutup dari proses pemilihan. setelah aku memilih salah  sat dari radio button yg sudah aku buat, aku bakalan nambahin atribut berupa "EMAIL".
+
+        
+    
 
 }
 
