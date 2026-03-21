@@ -8,10 +8,14 @@ body {
 /* mengatur tampilan untuk bagian foto dan nama aku */
 .header-mahasiswa{
     display: flex;/* digunakan untuk mengatur tata letak elemen di dalam wadah agar lebih rapi*/
-    justify-content: space-between;/* untuk mengatur pembagian ruang dengan kiri dan kanan. secara horizontal*/
+    align-items: flex-start;/* untuk mengatur pembagian ruang dengan kiri dan kanan. secara horizontal*/
     padding: 20px 50px;/* untuk menghilangkan ruang kosong di DALAM kotak*/
     background: white;/* untuk menentukan warna latar belakang*/
-    align-items: center;/* untuk mengatur pembagian ruang dengan atas dan bawah. secara vertikal*/
+    gap: 30px;/* untuk  atur memberi jarak teks dan foto */
+    justify-content: flex-start;/* untuk mengatur semua foto dan teks harus di kiri */ 
+}
+.info-teks {
+    flex: 1;/*untuk menatur tatanan "Teks harus punya ruang utama" */
 }
 /* untuk mengatur tampilan foto saya*/
 .info-foto img { 
