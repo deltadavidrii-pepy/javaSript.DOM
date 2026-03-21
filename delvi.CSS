@@ -25,7 +25,7 @@ body {
     padding: 30px 50px; /* untuk menghilangkan ruang kosong di DALAM kotak*/
     background: white; /* untuk menentukan warna latar belakang*/
     margin: 20px 50px;/*untuk menghilangkan spasi di LUAR kotak*/
-    border-radius: 8px;/* digunakan untuk menumpulkan/merapikan sudut tajam pada sebuah kotak(foto ku). */
+    border-radius: 8px; /* digunakan untuk menumpulkan/merapikan sudut tajam pada sebuah kotak(foto ku). */
     box-shadow: 0 2px 10px rgba(20, 19, 19, 0.1);/* digunakan untuk membri bayangan dengan menggunakan warna pada atas latar belakangnya. atau digunakan untuk memberikan efek bayangan pada kotak (container).*/
     min-height: 400px; /* digunakan untuk menentukan tinggi minimal sebuah kotak pada menu pilihan */
 }
@@ -40,13 +40,49 @@ body {
 .form-group label { 
     color: blue; /* untuk atur warna teks */
     width: 150px; /* untuk ukuran lebarnya ukuran tulisan */ 
-    font-weight: bold; 
+    font-weight: bold; /* untuk ketebalan tulisan */
 }
 
 /* untuk mengatur ukuran pada kotak yang untuk mengetik. */
 .form-group input { 
-    border: 1px solid black; 
-    padding: 8px; 
-    width: 300px; 
-    border-radius: 4px;
+    border: 1px solid black;  /* digunakan untuk garis pinggir(bingkai) pada bagian nama dan jumlah pilihan */
+    padding: 8px; /* untuk menghilangkan ruang kosong di DALAM kotak*/
+    width: 300px; /* untuk ukuran lebarnya ukuran kotaknya */ 
+    border-radius: 4px; /* digunakan untuk menumpulkan/merapikan sudut tajam pada sebuah kotak. pada  nama dan jumlah ilihan  */
+}
+/*  untuk tyling Tombol/ kondisi awal*/ 
+button { 
+    padding: 8px 25px; /* untuk menghilangkan ruang kosong di DALAM pada tombol*/
+    cursor: pointer; /* bentuk kursor */
+    background: white; /* warna dasarnya */
+    border: 1px solid black; /* untuk garis pinggir (hitam).*/
+    font-weight: bold; /*  untuk atur tebalan teks pada tombol/ tulisan */
+    margin-top: 10px; /* emberi jarak antara tombol dengan elemen di atasnya. */
+    transition: 0.3s;/* membuat efek sentuhan saat warna tombol berubah (saat di sentuh mose) */
+}
+/* untuk aturan saat klik pada tombol misal klik "ok" */
+button:hover { 
+    background: #040810; 
+    color: rgb(217, 21, 21); 
+}
+
+/* Utility (Sembunyi) */
+.hidden { 
+    display: none !important; 
+}
+
+/*  KOTAK HASIL AKHIR untuk atur jarak dari dalam garis kotak di dalamnya agar tulisan tidak nempel ke kotak (PENTING) */
+#section-akhir { 
+    margin-top: 30px; 
+    padding: 20px; 
+    border: 2px solid black; /* Membuat kotak bingkai hitam */
+    background-color: #fff;
+    color: blue; /* Teks berwarna biru sesuai keinginanmu */
+    font-size: 18px; 
+    line-height: 1.6; 
+}
+
+/* untuk mengatur jarak dari luar garis kotak dengan benda lain agar tidak tabrak */
+#section-akhir p {
+    margin: 0;
 }
