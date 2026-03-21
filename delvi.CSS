@@ -15,8 +15,8 @@ body {
 }
 /* untuk mengatur tampilan foto saya*/
 .info-foto img { 
-    width: 10px;/* untuk ukuran lebarnya foto saya*/ 
-    height: 100px; /* untuk mengatur ukuran tinggi fotoku */
+    width: 100px;/* untuk ukuran lebarnya foto saya*/ 
+    height: 150px; /* untuk mengatur ukuran tinggi fotoku */
     border: 2px solid #0044cc; /* digunakan untuk garis pinggir(bingkai) pada fotoku */
     border-radius: 5px; /* digunakan untuk menumpulkan/merapikan sudut tajam pada sebuah kotak(foto ku). */
 }
@@ -54,7 +54,7 @@ body {
 button { 
     padding: 8px 25px; /* untuk menghilangkan ruang kosong di DALAM pada tombol*/
     cursor: pointer; /* bentuk kursor */
-    background: white; /* warna dasarnya */
+    background: rgb(227, 228, 234); /* warna dasarnya pada tombol "OK" */
     border: 1px solid black; /* untuk garis pinggir (hitam).*/
     font-weight: bold; /*  untuk atur tebalan teks pada tombol/ tulisan */
     margin-top: 10px; /* emberi jarak antara tombol dengan elemen di atasnya. */
@@ -62,8 +62,8 @@ button {
 }
 /* untuk aturan saat klik pada tombol misal klik "ok" */
 button:hover { 
-    background: #040810; 
-    color: rgb(217, 21, 21); 
+    background: #174bb3; /* untuk atur background saat mengklik tombol "OK" */
+    color: rgb(239, 232, 237); /* untuk atur warna pas kursor saat menyentuk tombol "OK" atau ingin mengklik "Ok" */
 }
 
 /* Utility (Sembunyi) */
