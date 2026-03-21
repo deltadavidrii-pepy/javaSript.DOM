@@ -107,7 +107,28 @@ let container3 = document.getElementById('section-3');// buat kotak/ from piliha
 }
 // TAHAP TERAKHIR :
 function tahapakhir(){
-    let resTerPilih = document.querySelector('input[name="pilih_radio"]:checked');
-    let emailInput = document.getElementById('input-email').value;
+    
+    let radTerpilih = document.querySelector('input[name="pilih_radio"]:checked');// digunakan untuk mengambil apa yang sudah di pilih.
+    let emailInput = document.getElementById('input-email').value;// mengambil dan menampilkan email yang sudah di ketik oleh user.
+
+    if (!radTerpilih || !emailInput.includes("@")) {// di gunakan untuk melihat atau memilih apakah sudah memilih dan mengisi yang sudah di tetapkan.
+        alert("Pastikan Anda sudah memilih opsi dan mengisi email dengan benar!");
+        return;// berhenti
+
+    }
+
+    dataUser.pilihanterakhir = radTerpilih.value;//Memasukkan teks dari tombol bulat (Radio Button) yang diklik user ke dalam variabel pilihanFinal.
+    dataUser.email = emailInput;// Memasukkan alamat email yang diketik user ke dalam variabel email di dalam objek dataUser.
+
+    // tampilan untuk hasil akhir
+    let resultBox = document.getElementById('section-akhir');// digunakan untuk Mencari wadah atau tempat di HTML misalnya <div> atau `<section> yang memiliki id="section-akhir"`.
+    resultBox.innerHTML = `
+        <p>Hallo, nama saya <b>${dataUser.nama}</b>, email <b>${dataUser.email}</b>.
+        Saya mempunyai sejumlah <b>${dataUser.jml}</b> pilihan yaitu <b>${dataUser.listPilihan.join(", ")}</b>.
+        Dan saya memilih <b>${dataUser.pilihanterakhir}</b>.</p>
+    `;// ${dataUser.nama} Memunculkan nama yang diketik user di awal. ${dataUser.email} Memunculkan email yang diketik user di tahap sebelumnya. ${dataUser.jml} Memunculkan angka jumlah pilihan. ${dataUser.listPilihan.join(", ")}: digunakan untuk menggabungkan sehingga kodenya di atas menjadi sebuah kalimat.${dataUser.pilihanFinal}: digunakan untuk Memunculkan satu pilihan utama yang tadi diklik pada radio button.
+
+    resultBox.classList.remove('hidden');// adalah untuk menampilkan elemen resultBox ke layar browser.
+    
 }
 
